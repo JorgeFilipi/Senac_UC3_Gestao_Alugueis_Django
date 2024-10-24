@@ -11,32 +11,44 @@ Este projeto é um aplicativo web desenvolvido com Django. Nela vamos implementa
 
   - Gerenciamento de usuário;
   - Cadastro de imóveis;
+  - Exclusão de imóveis;
   - Cadastro de aluguéis;
+  - Exclusão de aluguéis;
   - cadastro de inquilinos;
-  - Restrição de acesso por usuário;
+  - Exclusão de inquilinos;
   - OBS.: Este projeto está em desenvolvimento ele vai sofrer alterações ainda e novas funcionalidade pode surgir
 
 ## Estrutura do Projeto
 
 ```bash
-nome_do_projeto/
+gestao_de_alugueis/
 │
-├── manage.py                  # Interface de linha de comando (CLI)
-├── nome_do_projeto/
+├ manage.py                  # Interface de linha de comando (CLI)
+├── gestao_de_alugueis/
 │   ├── __init__.py
 │   ├── settings.py
 │   ├── urls.py
 │   ├── asgi.py
 │   └── wsgi.py
-├── nome_do_app/
+├── imoveis/
 │   ├── migrations/
 │   │   └── __init__.py
+|   ├── templates/imoveis/
+│   │   |── base.html
+│   │   |── editar_imovel.html
+│   │   |── excluir_imovel.html
+│   │   |── index.html
+│   │   |── list_imoveis.html
+│   │   |── list_inquilinos.html
+│   │   └── login.html
 │   ├── __init__.py
 │   ├── admin.py
 │   ├── apps.py
 │   ├── models.py
 │   ├── tests.py
-│   └── views.py
+│   └── views.py/
+
+
 ```
 
 ## Contato:
