@@ -44,8 +44,10 @@ gestao_de_alugueis/
 │   ├── __init__.py
 │   ├── admin.py
 │   ├── apps.py
+│   ├── forms.py
 │   ├── models.py
 │   ├── tests.py
+│   ├── urls.py
 │   └── views.py/
 
 
