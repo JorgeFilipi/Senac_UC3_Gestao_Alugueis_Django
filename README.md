@@ -33,6 +33,8 @@ gestao_de_alugueis/
 ├── imoveis/
 │   ├── migrations/
 │   │   └── __init__.py
+│   ├── static/imoveis/css/
+│   │   └── style.css
 |   ├── templates/imoveis/
 │   │   |── base.html
 │   │   |── editar_imovel.html
