@@ -1,7 +1,6 @@
 from django.db import models
 
 
-# Modelo para Imóveis
 class Imovel(models.Model):
     endereco = models.CharField(max_length=255)
     cidade = models.CharField(max_length=100)
@@ -13,7 +12,6 @@ class Imovel(models.Model):
         return f"{self.endereco} - {self.cidade}/{self.estado}"
 
 
-# Modelo para Inquilinos
 class Inquilino(models.Model):
     nome = models.CharField(max_length=100)
     telefone = models.CharField(max_length=20)
@@ -24,7 +22,6 @@ class Inquilino(models.Model):
         return f"{self.nome} - {self.imovel.endereco}"
 
 
-# Modelo para Aluguéis
 class Aluguel(models.Model):
     inquilino = models.ForeignKey(Inquilino, on_delete=models.CASCADE)
     data_vencimento = models.DateField()
