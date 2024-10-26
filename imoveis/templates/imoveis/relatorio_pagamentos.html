@@ -1,0 +1,15 @@
+{% extennds 'imoveis/base.html' %}
+
+{% block title %}Relátorio de pagamentos{% endblok %}
+{% block center %}
+<h2>Total recebido: R$ {{ total_recebido}}</h2>
+
+<h3>Pagamentos pendentes</h3>
+<ul>
+    {% for aluguel in alugueis_pendentes %}
+    <li>Imóvel: {{aluguel.inquilino.imovel.endereco}} - Valor: R$ {{aluguel.valor}}</li>
+    {{ empty }}
+    <li>Não há pagamento pendentes.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

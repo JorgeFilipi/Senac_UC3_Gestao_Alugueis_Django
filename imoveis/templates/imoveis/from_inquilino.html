@@ -8,24 +8,20 @@
         {% csrf_token %}
 
         <div class="col-md-6">
-            {{ form.endereco.label_tag }}
-            {{ form.endereco }}
+            {{ form.nome.label_tag }}
+            {{ form.nome }}
         </div>
         <div class="col-md-6">
-            {{ form.cidade.label_tag }}
-            {{ form.cidade }}
+            {{ form.telefone.label_tag }}
+            {{ form.telefone }}
         </div>
         <div class="col-md-6">
-            {{ form.estado.label_tag }}
-            {{ form.estado }}
+            {{ form.email.label_tag }}
+            {{ form.email }}
         </div>
         <div class="col-md-6">
-            {{ form.preco_aluguel.label_tag }}
-            {{ form.preco_aluguel }}
-        </div>
-        <div class="col-12">
-            {{ form.descricao.label_tag }}
-            {{ form.descricao }}
+            {{ form.imovel.label_tag }}
+            {{ form.imovel }}
         </div>
 
         {% if form.errors %}
@@ -41,7 +37,10 @@
         {% endif %}
         <div class="col-12">
             <button type="submit" class="btn btn-primary">Salvar</button>
-            <a href="{% url 'list_imoveis' %}" class="btn btg-large btn-secondary">Cancelar</a>
+            <a href="{% url 'list_inquilinos' %}" class="btn btg-large btn-secondary">Cancelar</a>
+            {#            <a class="btn btn-warning btn-sm" href="{% url 'editar_imovel' imovel.id %}">Editar</a>#}
+            {#            <a class="btn btn-danger btn-sm" href="{% url 'excluir_imovel' imovel.id %}">Excluir</a>#}
+
         </div>
     </form>
 {% endblock %}
