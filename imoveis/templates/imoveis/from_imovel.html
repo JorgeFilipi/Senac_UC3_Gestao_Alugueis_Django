@@ -6,7 +6,7 @@
 <h1 class="mb-4">{{ title }}</h1>
 <form method="post" class="row g-3">
     {% csrf_token %}
-    
+
     <div class="col-md-6">
         {{ form.endereco.label_tag }}
         {{ form.endereco }}
@@ -27,7 +27,7 @@
         {{ form.descricao.label_tag }}
         {{ form.descricao }}
     </div>
-    
+
     {% if form.errors %}
         <div class="alert alert-danger">
             <ul>
