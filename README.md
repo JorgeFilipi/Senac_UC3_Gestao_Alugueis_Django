@@ -1,25 +1,95 @@
-# IMOBILIÁRIA COM DJANGO
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/JorgeFilipi/JorgeFilipi/blob/main/LICENSE) 
+# SENAC UC3 - Sistema de Gestão de Aluguéis (Django)
 
-## Origem do prjeto
+## 📖 Sobre o Projeto
 
-Este projeto foi desenvolvido durante as aulas do curso de Python, ministrado pelo Senac, na terceira disciplina, sob a orientação e supervisão do professor Luis Paulo Lessa de Assis. Segue o link do GitHub do professor: [lpjunior](https://github.com/lpjunior)
-  
-## Descrição
+Este projeto foi desenvolvido como parte da Unidade Curricular 3 (UC3) do curso [Nome do Curso] no SENAC [Localidade do SENAC, se aplicável]. O objetivo é um sistema de gestão de aluguéis construído com o framework Django, permitindo [Descreva aqui as principais funcionalidades, por exemplo: cadastrar imóveis para aluguel, gerenciar inquilinos, registrar contratos de aluguel, controlar pagamentos, etc.].
 
-Este projeto é um aplicativo web desenvolvido com Django. Nela vamos implementar as funcionalidades de uma imobiliária ele terá as seguintes funções:
+## ✨ Funcionalidades Principais
 
-  - Gerenciamento de usuário;
-  - Cadastro de imóveis;
-  - Exclusão de imóveis;
-  - Cadastro de aluguéis;
-  - Exclusão de aluguéis;
-  - cadastro de inquilinos;
-  - Exclusão de inquilinos;
-  - OBS.: Este projeto está em desenvolvimento ele vai sofrer alterações ainda e novas funcionalidade pode surgir
+* **Cadastro de Imóveis:** Permite registrar imóveis disponíveis para aluguel com detalhes (endereço, tipo, valor do aluguel, número de quartos, etc.).
+* **Gerenciamento de Inquilinos:** Funcionalidades para cadastrar informações de inquilinos.
+* **Gestão de Contratos:** Criação e acompanhamento de contratos de aluguel, vinculando imóveis e inquilinos.
+* **Controle de Pagamentos:** Registro e acompanhamento de pagamentos de aluguel.
+* **[Funcionalidade Adicional 1]:** [Breve descrição, ex: Emissão de relatórios de inadimplência]
+* **[Funcionalidade Adicional 2]:** [Breve descrição, ex: Dashboard com status dos aluguéis]
+* **[Outras funcionalidades relevantes]**
 
-## Estrutura do Projeto
+## 🛠️ Tecnologias Utilizadas
 
+* **Linguagem de Programação:** Python ([Versão, ex: 3.8+])
+* **Framework Backend:** Django ([Versão, ex: 3.2+])
+* **Framework Frontend:** [Ex: Templates Django (HTML, CSS, JavaScript), ou algum framework JS como React/Vue se integrado]
+* **Banco de Dados:** [Ex: SQLite (padrão Django para desenvolvimento), PostgreSQL, MySQL]
+* **Gerenciamento de Dependências:** Pip com `requirements.txt`
+* **Outras Ferramentas/Bibliotecas:** [Ex: Django REST framework (para APIs), Celery (para tarefas assíncronas), Git]
+
+## 🖼️ Screenshots / Demonstração (Opcional)
+
+Adicione screenshots ou GIFs para mostrar a interface e as funcionalidades do sistema.
+
+*Página Inicial:*
+![Placeholder para Screenshot da Página Inicial](link_para_sua_imagem_aqui.png)
+
+*Cadastro de Imóvel:*
+![Placeholder para Screenshot do Cadastro de Imóvel](link_para_sua_imagem_aqui.png)
+
+## ⚙️ Pré-requisitos
+
+Antes de executar o projeto, certifique-se de ter instalado:
+
+* [Python X.X ou superior](link_para_download_python) (verifique a versão usada no projeto)
+* [Pip (geralmente vem com Python)](https://pip.pypa.io/en/stable/installation/)
+* [Git](https://git-scm.com/downloads)
+* (Opcional, mas recomendado) Um ambiente virtual Python (ex: `venv` ou `conda`)
+
+## 🚀 Instalação e Execução
+
+Siga os passos abaixo para configurar e executar o projeto localmente:
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/JorgeFilipi/Senac_UC3_Gestao_Alugueis_Django.git](https://github.com/JorgeFilipi/Senac_UC3_Gestao_Alugueis_Django.git)
+    cd Senac_UC3_Gestao_Alugueis_Django
+    ```
+
+2.  **Crie e Ative um Ambiente Virtual (Recomendado):**
+    ```bash
+    python -m venv venv
+    # No Windows:
+    venv\Scripts\activate
+    # No macOS/Linux:
+    source venv/bin/activate
+    ```
+
+3.  **Instale as Dependências:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Configure as Variáveis de Ambiente (se houver):**
+    * Verifique se há um arquivo `.env.example` ou instruções no código sobre variáveis de ambiente necessárias (ex: `SECRET_KEY`, configurações de banco de dados se não for SQLite).
+    * Se necessário, crie um arquivo `.env` e adicione as configurações.
+
+5.  **Aplique as Migrações do Banco de Dados:**
+    ```bash
+    python manage.py migrate
+    ```
+
+6.  **Crie um Superusuário (para acessar o Admin do Django):**
+    ```bash
+    python manage.py createsuperuser
+    ```
+    (Siga as instruções no terminal para definir nome de usuário, email e senha)
+
+7.  **Execute o Servidor de Desenvolvimento:**
+    ```bash
+    python manage.py runserver
+    ```
+
+8.  Acesse a aplicação em: `http://localhost:8000`
+    * Acesse o painel de administração do Django em: `http://localhost:8000/admin` (usando as credenciais do superusuário criado).
+
+## 📋 Estrutura do Projeto (Simplificada)
 ```bash
 gestao_de_alugueis/
 │
@@ -55,6 +125,14 @@ gestao_de_alugueis/
 
 ```
 
-## Contato:
-- **E-mail:** [dev.jdias](mailto:dev.jdias@gmail.com)
-- **LinkedIn:** [Jorge Dias](https://www.linkedin.com/in/jorge-dias-66117629b/)
+## 📄 Licença
+
+Este projeto é distribuído sob a licença [Nome da Licença, ex: MIT]. Veja o arquivo `LICENSE` para mais detalhes (se você adicionar um).
+
+### 📞 Conecte-se Comigo
+
+<p align="left">
+  <a href="https://linkedin.com/in/jfdias" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="jfdias" height="30" width="40" /></a>
+  <a href="mailto:jorgefelipe1986@gmail.com" target="_blank"><img align="center" src="https://img.icons8.com/color/48/000000/gmail-new.png" alt="jorgefelipe1986@gmail.com" height="30" width="40" /></a>
+  <a href="https://discord.gg/jorgefelipe1986" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="jorgefelipe1986" height="30" width="40" /></a>
+  </p>
