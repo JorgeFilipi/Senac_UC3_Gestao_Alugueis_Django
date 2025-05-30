@@ -10,9 +10,7 @@ Este projeto foi desenvolvido como parte da Unidade Curricular 3 (UC3) do curso 
 * **Gerenciamento de Inquilinos:** Funcionalidades para cadastrar informações de inquilinos.
 * **Gestão de Contratos:** Criação e acompanhamento de contratos de aluguel, vinculando imóveis e inquilinos.
 * **Controle de Pagamentos:** Registro e acompanhamento de pagamentos de aluguel.
-* **[Funcionalidade Adicional 1]:** [Breve descrição, ex: Emissão de relatórios de inadimplência]
-* **[Funcionalidade Adicional 2]:** [Breve descrição, ex: Dashboard com status dos aluguéis]
-* **[Outras funcionalidades relevantes]**
+
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -23,22 +21,11 @@ Este projeto foi desenvolvido como parte da Unidade Curricular 3 (UC3) do curso 
 * **Gerenciamento de Dependências:** Pip com `requirements.txt`
 * **Outras Ferramentas/Bibliotecas:** [Ex: Django REST framework (para APIs), Celery (para tarefas assíncronas), Git]
 
-## 🖼️ Screenshots / Demonstração (Opcional)
-
-Adicione screenshots ou GIFs para mostrar a interface e as funcionalidades do sistema.
-
-*Página Inicial:*
-![Placeholder para Screenshot da Página Inicial](link_para_sua_imagem_aqui.png)
-
-*Cadastro de Imóvel:*
-![Placeholder para Screenshot do Cadastro de Imóvel](link_para_sua_imagem_aqui.png)
-
 ## ⚙️ Pré-requisitos
 
 Antes de executar o projeto, certifique-se de ter instalado:
 
-* [Python X.X ou superior](link_para_download_python) (verifique a versão usada no projeto)
-* [Pip (geralmente vem com Python)](https://pip.pypa.io/en/stable/installation/)
+* [Python X.X ou superior](https://www.python.org/downloads/) (verifique a versão usada no projeto)
 * [Git](https://git-scm.com/downloads)
 * (Opcional, mas recomendado) Um ambiente virtual Python (ex: `venv` ou `conda`)
 
